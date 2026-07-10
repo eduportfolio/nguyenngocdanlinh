@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Ngọc Đan Linh — US Graduate Application Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ══════════════ TICKER ══════════════ -->
+    <div class="ticker-wrap">
+      <div class="ticker-inner" id="ticker">
+        <span>MBA Applicant 2026</span>
+        <span class="dot">·</span>
+        <span>International Business</span>
+        <span class="dot">·</span>
+        <span>GPA 3.4 / 4.0</span>
+        <span class="dot">·</span>
+        <span>IELTS 7.0</span>
+        <span class="dot">·</span>
+        <span>Green Consumption Research</span>
+        <span class="dot">·</span>
+        <span>Foreign Trade University</span>
+        <span class="dot">·</span>
+        <span>HR Leadership · ECV Project</span>
+        <span class="dot">·</span>
+        <span>MBA Applicant 2026</span>
+        <span class="dot">·</span>
+        <span>International Business</span>
+        <span class="dot">·</span>
+        <span>GPA 3.4 / 4.0</span>
+        <span class="dot">·</span>
+        <span>IELTS 7.0</span>
+        <span class="dot">·</span>
+      </div>
+    </div>
+
+    <!-- ══════════════ NAV ══════════════ -->
+    <nav class="nav" id="nav">
+      <div class="nav__logo">
+        <span class="nav__monogram">DL</span>
+        <div class="nav__logo-text">
+          <span class="nav__full-name">Đan Linh</span>
+          <span class="nav__subtitle">MS Applicant</span>
+        </div>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══════════════ HERO ══════════════ -->
+    <section class="hero" id="home">
+      <canvas id="globeCanvas"></canvas>
+      <div class="hero__grid-overlay"></div>
+
+      <div class="hero__left reveal-left">
+        <p class="hero__eyebrow">Graduate School Applicant · Class of 2027</p>
+        <h1 class="hero__name">
+          Nguyễn<br>Ngọc<br><em>Đan Linh</em>
+        </h1>
+        <div class="hero__rule"></div>
+        <p class="hero__field">International Business &amp; Strategy</p>
+      </div>
+
+      <div class="hero__right reveal-right">
+        <div class="hero__stat-board">
+          <div class="stat-cell">
+            <span class="stat-cell__val">3.4</span>
+            <span class="stat-cell__label">GPA / 4.0</span>
+          </div>
+          <div class="stat-cell stat-cell--accent">
+            <span class="stat-cell__val">7.0</span>
+            <span class="stat-cell__label">IELTS Band</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-cell__val">FTU</span>
+            <span class="stat-cell__label">Foreign Trade Univ.</span>
+          </div>
+          <div class="stat-cell stat-cell--wide">
+            <span class="stat-cell__val">Int'l Business / BA</span>
+            <span class="stat-cell__label">Area of Study</span>
+          </div>
+        </div>
+
+        <div class="hero__badges">
+          <span class="hbadge">Green Consumption Researcher</span>
+          <span class="hbadge hbadge--outline">HR Vice Head — ECV Project</span>
+          <span class="hbadge">Business Plan Competitor</span>
+        </div>
+
+        <a href="#about" class="hero__cta">
+          View Full Profile
+          <svg viewBox="0 0 20 20" fill="none">
+            <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__date-stamp">
+        <span class="mono">BORN 05.08.2005</span>
+        <span class="mono">HO CHI MINH CITY, VN</span>
+      </div>
+    </section>
+
+    <!-- ══════════════ ABOUT ══════════════ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__photo-col reveal-left">
+            <div class="about__photo-frame">
+              <img src="assets/images/profile.jpg" alt="Đan Linh" class="about__photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+              <div class="about__photo-placeholder">
+                <svg viewBox="0 0 100 120" fill="none">
+                  <circle cx="50" cy="40" r="22" stroke="var(--gold)" stroke-width="1.2" />
+                  <path d="M14 100 C14 72 86 72 86 100" stroke="var(--gold)" stroke-width="1.2" />
+                </svg>
+                <span>Profile Photo</span>
+              </div>
+            </div>
+            <div class="about__photo-meta">
+              <span class="mono small">nndl.danlinh158@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="about__text reveal-right">
+            <div class="section__eyebrow">About Me</div>
+            <h2 class="section__title">A Global Thinker<br>Built for Business.</h2>
+            <p class="about__lead">
+              I'm Đan Linh — a final-year student at Foreign Trade University (FTU) in Hanoi, where I've
+              spent four years developing a rigorous foundation in international business, trade policy, and consumer
+              behavior.
+            </p>
+            <p class="about__body">
+              What distinguishes my profile is a genuine curiosity about why people make decisions — especially at the
+              crossroads of sustainability and commerce. My thesis research on green product purchasing behavior grew
+              from that question, producing empirical findings that challenge assumptions about eco-conscious
+              millennials. I'm now seeking a U.S. master's program where I can deepen that analytical lens and work on
+              business problems that matter globally.
+            </p>
+            <div class="about__pillars">
+              <div class="pillar">
+                <span class="pillar__icon">◆</span>
+                <div>
+                  <span class="pillar__title">Research-Oriented</span>
+                  <span class="pillar__desc">Quantitative consumer behavior research with academic publication-level
+                    rigor</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon">◆</span>
+                <div>
+                  <span class="pillar__title">People Leader</span>
+                  <span class="pillar__desc">HR leadership in project-based student organizations, managing teams and
+                    operations</span>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon">◆</span>
+                <div>
+                  <span class="pillar__title">Globally Minded</span>
+                  <span class="pillar__desc">International trade curriculum, bilingual, and committed to cross-border
+                    business thinking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ACADEMICS ══════════════ -->
+    <section class="section academics alt-bg" id="academics">
+      <div class="container">
+        <div class="section__header reveal-up">
+          <div class="section__eyebrow">Academic Credentials</div>
+          <h2 class="section__title">Scores &amp; Education</h2>
+        </div>
+
+        <div class="academics__layout">
+
+          <!-- Education card -->
+          <div class="edu-card reveal-up delay-1">
+            <div class="edu-card__img-wrap">
+              <img src="assets/images/ftu.jpg" alt="FTU Campus"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+              <div class="img-placeholder">
+                <svg viewBox="0 0 60 60" fill="none">
+                  <rect x="10" y="28" width="40" height="24" rx="2" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M30 8 L50 22 H10 L30 8Z" stroke="currentColor" stroke-width="1.2" />
+                  <rect x="23" y="36" width="14" height="16" rx="1" stroke="currentColor" stroke-width="1" />
+                </svg>
+                <span>Campus Photo</span>
+              </div>
+            </div>
+            <div class="edu-card__body">
+              <span class="mono small gold">UNDERGRADUATE</span>
+              <h3 class="edu-card__school">Foreign Trade University</h3>
+              <p class="edu-card__degree">Bachelor of Arts — International Business</p>
+              <p class="edu-card__location">Hanoi, Vietnam · 2023–2027</p>
+              <ul class="edu-card__bullets">
+                <li>Top-ranked university for international economics and business in Vietnam</li>
+                <li>Curriculum covers global trade law, supply chain, corporate strategy, and economics</li>
+                <li>Conducted undergraduate thesis research with quantitative methodology</li>
+                <li>Active in extracurricular competitions and project organizations</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Score cards -->
+          <div class="score-stack">
+            <div class="score-card reveal-up delay-2">
+              <div class="score-card__left">
+                <div class="score-card__number">3.4</div>
+                <div class="score-card__denom">/ 4.0</div>
+              </div>
+              <div class="score-card__right">
+                <span class="score-card__name">Cumulative GPA</span>
+                <span class="score-card__sub">Foreign Trade University</span>
+                <div class="score-card__bar-wrap">
+                  <div class="score-card__bar">
+                    <div class="score-card__bar-fill" style="--pct: 85%"></div>
+                  </div>
+                </div>
+                <ul class="score-card__bullets">
+                  <li>Consistent performance across 4 academic years</li>
+                  <li>Strong marks in research methods &amp; econometrics</li>
+                  <li>Top cohort in international trade policy modules</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="score-card score-card--ielts reveal-up delay-3">
+              <div class="score-card__left">
+                <div class="score-card__number">7.0</div>
+                <div class="score-card__denom">IELTS</div>
+              </div>
+              <div class="score-card__right">
+                <span class="score-card__name">Overall Band Score</span>
+                <span class="score-card__sub">C1 Advanced Level</span>
+                <div class="score-card__bar-wrap">
+                  <div class="score-card__bar">
+                    <div class="score-card__bar-fill" style="--pct: 87.5%"></div>
+                  </div>
+                </div>
+                <ul class="score-card__bullets">
+                  <li>Meets or exceeds most U.S. graduate admissions thresholds</li>
+                  <li>Strong academic writing and reading comprehension</li>
+                  <li>Proficient in business English communication</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ RESEARCH ══════════════ -->
+    <section class="section research" id="research">
+      <div class="container">
+        <div class="section__header reveal-up">
+          <div class="section__eyebrow">Academic Research</div>
+          <h2 class="section__title">Research &amp; Publications</h2>
+        </div>
+
+        <!-- Main research paper -->
+        <div class="research-paper reveal-up delay-1">
+          <div class="research-paper__img-wrap">
+            <img src="assets/images/research-cover.jpg" alt="Research Paper"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="img-placeholder">
+              <svg viewBox="0 0 60 70" fill="none">
+                <rect x="8" y="4" width="44" height="62" rx="3" stroke="currentColor" stroke-width="1.2" />
+                <path d="M16 18h28M16 26h28M16 34h20M16 48h14" stroke="currentColor" stroke-width="1"
+                  stroke-linecap="round" />
+                <circle cx="42" cy="50" r="8" stroke="var(--gold)" stroke-width="1.2" />
+                <path d="M38 50h8M42 46v8" stroke="var(--gold)" stroke-width="1" stroke-linecap="round" />
+              </svg>
+              <span>Paper Cover</span>
+            </div>
+            <div class="research-paper__type-badge">Undergraduate Research</div>
+          </div>
+          <div class="research-paper__content">
+            <span class="mono small gold">CONSUMER BEHAVIOR · 2026</span>
+            <h3 class="research-paper__title">Factors Influencing Young Consumers' Intention to Choose Green Products:
+              Evidence from Hanoi</h3>
+            <p class="research-paper__abstract">
+              This study investigates the determinants of green product purchase intentions among young urban consumers
+              in Hanoi, Vietnam — one of Southeast Asia's fastest-growing consumer markets. Using a quantitative survey
+              methodology and structural equation modeling (SEM), the research identifies and ranks the relative
+              influence of environmental attitudes, social norms, perceived quality, price sensitivity, and eco-label
+              awareness.
+            </p>
+            <div class="research-paper__meta">
+              <div class="meta-item">
+                <span class="meta-item__label">Methodology</span>
+                <span class="meta-item__val">Survey + SEM / Quantitative</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-item__label">Sample</span>
+                <span class="meta-item__val">Young consumers, Hanoi</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-item__label">Field</span>
+                <span class="meta-item__val">Consumer Behavior · Sustainability</span>
+              </div>
+            </div>
+            <div class="research-paper__findings">
+              <span class="mono small">Key Findings</span>
+              <ul>
+                <li>Environmental attitude and subjective norms are the strongest predictors of green purchase intent
+                </li>
+                <li>Price remains a significant barrier even among eco-conscious respondents</li>
+                <li>Eco-label literacy is lower than expected, suggesting a marketing gap</li>
+                <li>Peer influence amplifies green purchasing intent, especially through social media</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ HONORS ══════════════ -->
+    <section class="section honors alt-bg" id="honors">
+      <div class="container">
+        <div class="section__header reveal-up">
+          <div class="section__eyebrow">Recognitions</div>
+          <h2 class="section__title">Honors &amp; Awards</h2>
+        </div>
+        <div class="honors__list">
+          <div class="honor-item reveal-up">
+            <div class="honor-item__meta">
+              <span class="mono gold">2024</span>
+              <span class="mono small">COMPETITION CERTIFICATE</span>
+            </div>
+            <div class="honor-item__content">
+              <h3 class="honor-item__title">Business Plan Competition 2024</h3>
+              <p class="honor-item__desc">
+                Awarded an honorary certificate for deep participation in the business strategy formulation phase.
+              </p>
+              <ul class="honor-bullets">
+                <li>Developed financial solutions and a go-to-market strategy for a simulated startup product.</li>
+                <li>Defended the model before an evaluation panel consisting of investment experts and senior Management
+                  professors.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ ACTIVITIES ══════════════ -->
+    <section class="section activities" id="activities">
+      <div class="container">
+        <div class="section__header reveal-up">
+          <div class="section__eyebrow">Community &amp; Engagement</div>
+          <h2 class="section__title">Social Activities</h2>
+        </div>
+    
+        <div class="activities__list">
+          <div class="activity-item reveal-up">
+            <div class="activity-item__meta">
+              <span class="mono gold">2024</span>
+              <span class="mono small">VOLUNTEER &amp; COMMUNITY</span>
+            </div>
+            <div class="activity-item__content">
+    
+              <div class="activity-layout">
+                <div class="activity-text-side">
+                  <h3 class="activity-item__title">Patient Support &amp; Charity Initiative at Saint Paul General Hospital
+                  </h3>
+                  <p class="activity-item__desc">
+                    Organized and participated in a hospital visitation program aimed at providing emotional encouragement
+                    and financial relief to underprivileged patients in critical conditions.
+                  </p>
+                  <ul class="activity-bullets">
+                    <li>Directly visited patient wards to deliver essential care packages and offer emotional solidarity to
+                      families facing severe medical hardships.</li>
+                    <li>Coordinated with the hospital’s social work department to distribute targeted financial aid to
+                      high-priority, low-income patients.</li>
+                  </ul>
+                </div>
+    
+                <div class="activity-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/cert.jpg" alt="Charity at Saint Paul Hospital - Photo 1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-129.jpg"
+                        alt="Charity at Saint Paul Hospital - Photo 2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-169.jpg"
+                        alt="Charity at Saint Paul Hospital - Photo 3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-363.jpg"
+                        alt="Charity at Saint Paul Hospital - Photo 4">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-363.jpg"
+                        alt="Charity at Saint Paul Hospital - Photo 5">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="zoom-img" src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-442.jpg"
+                        alt="Charity at Saint Paul Hospital - Photo 6">
+                    </div>
+                  </div>
+                
+                  <div class="swiper-pagination"></div>
+                
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <dialog id="lightbox-dialog">
+        <button class="close-dialog-btn">&times;</button>
+        <img src="" alt="Zoomed Image" id="dialog-img">
+      </dialog>
+    </section>
+
+    <!-- ══════════════ LEADERSHIP ══════════════ -->
+    <section class="section leadership alt-bg" id="leadership">
+      <div class="container">
+        <div class="section__header reveal-up">
+          <div class="section__eyebrow">Leadership Experience</div>
+          <h2 class="section__title">Roles &amp; Responsibilities</h2>
+        </div>
+
+        <div class="leadership-item reveal-up delay-1">
+          <div class="leadership-item__img-wrap">
+            <img src="assets/images/leadership-ecv.jpg" alt="ECV Project"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="img-placeholder">
+              <svg viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="22" r="10" stroke="var(--gold)" stroke-width="1.2" />
+                <circle cx="16" cy="46" r="7" stroke="currentColor" stroke-width="1" />
+                <circle cx="48" cy="46" r="7" stroke="currentColor" stroke-width="1" />
+                <path d="M32 32 L16 39M32 32 L48 39" stroke="var(--gold)" stroke-width="1.1" stroke-dasharray="3 2" />
+              </svg>
+              <span>Team Photo</span>
+            </div>
+          </div>
+          <div class="leadership-item__content">
+            <div class="leadership-item__role-badge">Vice Head of HR</div>
+            <span class="mono small gold">STUDENT ORGANIZATION · ECV PROJECT</span>
+            <h3 class="leadership-item__title">Vice Head of Human Resources Department — ECV Project</h3>
+            <p class="leadership-item__desc">
+              Served as Vice Head of the Human Resources Department within the ECV Project, a student-led initiative
+              focused on sustainable development and social impact. In this role, Đan Linh was responsible for
+              overseeing recruitment, team coordination, and member development across departments.
+            </p>
+            <ul class="leadership-item__bullets">
+              <li>Managed end-to-end recruitment cycles for project teams, reviewing applications and conducting
+                candidate interviews</li>
+              <li>Developed onboarding processes that reduced early member attrition and improved team cohesion</li>
+              <li>Coordinated cross-departmental communications between HR, logistics, and program leads</li>
+              <li>Contributed to building organizational culture aligned with the project's environmental values</li>
+              <li>Supported performance review processes and provided constructive feedback to team members</li>
+            </ul>
+            <div class="leadership-item__skills">
+              <span>Talent Acquisition</span>
+              <span>Team Management</span>
+              <span>Organizational Development</span>
+              <span>Stakeholder Communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ CONTACT ══════════════ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__inner reveal-up">
+          <div class="contact__flag">
+            <div class="contact__flag-line contact__flag-line--red"></div>
+            <div class="contact__flag-line contact__flag-line--gold"></div>
+            <div class="contact__flag-line contact__flag-line--red"></div>
+          </div>
+          <div class="section__eyebrow">Let's Connect</div>
+          <h2 class="section__title">Ready to talk about<br><em>what comes next.</em></h2>
+          <p class="contact__desc">
+            Admissions committees, mentors, and collaborators are welcome to reach out. I'm actively building my U.S.
+            graduate school application and open to conversations about research, business, and international
+            opportunities.
+          </p>
+          <a href="mailto:nndl.danlinh158@gmail.com" class="contact__email">
+            nndl.danlinh158@gmail.com
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="20" height="14" rx="2" />
+              <path d="M2 7l10 8 10-8" />
+            </svg>
+          </a>
+          <div class="contact__meta">
+            <span class="mono small">Hanoi City, Vietnam</span>
+            <span>·</span>
+            <span class="mono small">Foreign Trade University</span>
+            <span>·</span>
+            <span class="mono small">Born 05.08.2005</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════ FOOTER ══════════════ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="mono small muted">© 2026 Nguyễn Ngọc Đan Linh</span>
+        <span class="mono small muted">US Graduate School Application Portfolio</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
