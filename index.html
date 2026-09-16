@@ -127,7 +127,7 @@
         <div class="about__grid">
           <div class="about__photo-col reveal-left">
             <div class="about__photo-frame">
-              <img src="assets/images/profile.jpg" alt="Đan Linh" class="about__photo"
+              <img src="assets/images/xanhpon/viber_image_2026-06-24_08-56-59-169.jpg" alt="Đan Linh" class="about__photo"
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
               <div class="about__photo-placeholder">
                 <svg viewBox="0 0 100 120" fill="none">
@@ -284,10 +284,14 @@
 
         <!-- Main research paper -->
         <div class="research-paper reveal-up delay-1">
-          <div class="research-paper__img-wrap">
-            <img src="assets/images/research-cover.jpg" alt="Research Paper"
+          
+          <!-- Khung chứa ảnh ngang đã được CSS trực tiếp -->
+          <div class="research-paper__img-wrap" style="height: auto; min-height: 180px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 8px;">
+            <img src="assets/research/MTI-lognew.png" alt="Research Paper Cover"
+              style="max-width: 100%; height: auto; object-fit: contain; display: block;"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
-            <div class="img-placeholder">
+            
+            <div class="img-placeholder" style="display: none;">
               <svg viewBox="0 0 60 70" fill="none">
                 <rect x="8" y="4" width="44" height="62" rx="3" stroke="currentColor" stroke-width="1.2" />
                 <path d="M16 18h28M16 26h28M16 34h20M16 48h14" stroke="currentColor" stroke-width="1"
@@ -299,6 +303,7 @@
             </div>
             <div class="research-paper__type-badge">Undergraduate Research</div>
           </div>
+
           <div class="research-paper__content">
             <span class="mono small gold">CONSUMER BEHAVIOR · 2026</span>
             <h3 class="research-paper__title">Factors Influencing Young Consumers' Intention to Choose Green Products:
@@ -327,13 +332,20 @@
             <div class="research-paper__findings">
               <span class="mono small">Key Findings</span>
               <ul>
-                <li>Environmental attitude and subjective norms are the strongest predictors of green purchase intent
-                </li>
+                <li>Environmental attitude and subjective norms are the strongest predictors of green purchase intent</li>
                 <li>Price remains a significant barrier even among eco-conscious respondents</li>
                 <li>Eco-label literacy is lower than expected, suggesting a marketing gap</li>
                 <li>Peer influence amplifies green purchasing intent, especially through social media</li>
               </ul>
             </div>
+
+            <!-- Nút đọc full publication -->
+            <div class="research-paper__action" style="margin-top: 24px;">
+              <a href="assets/research/23948-76691-1-PB.pdf" target="_blank" class="btn-primary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 24px; background: var(--gold, #b8860b); color: #fff; border-radius: 4px; font-weight: 500;">
+                Read Full Publication ↗
+              </a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -346,24 +358,65 @@
           <div class="section__eyebrow">Recognitions</div>
           <h2 class="section__title">Honors &amp; Awards</h2>
         </div>
-        <div class="honors__list">
-          <div class="honor-item reveal-up">
-            <div class="honor-item__meta">
-              <span class="mono gold">2024</span>
-              <span class="mono small">COMPETITION CERTIFICATE</span>
+
+        <div class="honors__list" style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <!-- GIẢI THƯỞNG 1 -->
+          <div class="honor-item reveal-up" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(184, 134, 11, 0.15); padding: 28px; border-radius: 10px; transition: transform 0.3s ease, border-color 0.3s ease;">
+            <div class="honor-item__meta" style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+              <span class="mono gold" style="font-weight: 700;">2024</span>
+              <span style="color: rgba(255,255,255,0.3);">|</span>
+              <span class="mono small" style="opacity: 0.8; letter-spacing: 1px;">COMPETITION CERTIFICATE</span>
             </div>
             <div class="honor-item__content">
-              <h3 class="honor-item__title">Business Plan Competition 2024</h3>
-              <p class="honor-item__desc">
+              <h3 class="honor-item__title" style="margin-bottom: 8px; font-size: 1.25rem;">Business Plan Competition 2024</h3>
+              <p class="honor-item__desc" style="opacity: 0.85; margin-bottom: 12px; line-height: 1.6;">
                 Awarded an honorary certificate for deep participation in the business strategy formulation phase.
               </p>
-              <ul class="honor-bullets">
+              <ul class="honor-bullets" style="padding-left: 18px; margin: 0; opacity: 0.8; line-height: 1.6;">
                 <li>Developed financial solutions and a go-to-market strategy for a simulated startup product.</li>
-                <li>Defended the model before an evaluation panel consisting of investment experts and senior Management
-                  professors.</li>
+                <li>Defended the model before an evaluation panel consisting of investment experts and senior Management professors.</li>
               </ul>
             </div>
           </div>
+
+          <!-- GIẢI THƯỞNG 2 (WICO 2026 - BỐ CỤC 2 CỘT CHỮ + ẢNH THUMBNAIL) -->
+          <div class="honor-item honor-item--with-img reveal-up" style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(184, 134, 11, 0.25); padding: 28px; border-radius: 10px;">
+            <div style="display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap;">
+              
+              <!-- Cột thông tin chữ -->
+              <div class="honor-item__content" style="flex: 1; min-width: 280px;">
+                <div class="honor-item__meta" style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                  <span class="mono gold" style="font-weight: 700; color: #d4af37;">2026</span>
+                  <span style="color: rgba(255,255,255,0.3);">|</span>
+                  <span class="mono small gold" style="letter-spacing: 1px; background: rgba(184, 134, 11, 0.15); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem;">GOLD AWARD / INTERNATIONAL</span>
+                </div>
+
+                <h3 class="honor-item__title" style="margin-bottom: 8px; font-size: 1.25rem;">2026 WICO Gold Award</h3>
+                <p class="honor-item__desc" style="opacity: 0.85; margin-bottom: 12px; line-height: 1.6;">
+                  Awarded the Gold Award at the World Invention Creativity Olympics 2026 in Seoul, Korea, in recognition of Best Presentation, Outstanding Creativity, and Innovation.
+                </p>
+                <ul class="honor-bullets" style="padding-left: 18px; margin: 0; opacity: 0.8; line-height: 1.6;">
+                  <li style="margin-bottom: 6px;"><strong>Invention title:</strong> "Reducing credit barriers for small and medium-sized enterprises in Vietnam through an AI-powered financial risk assessment model."</li>
+                  <li>Organized by the Korea University Intellectual Property Association (KUIPA).</li>
+                </ul>
+              </div>
+
+              <!-- Cột thumbnail bằng khen bên phải -->
+              <div class="honor-item__img-box" style="flex-shrink: 0; width: 200px; max-width: 100%;">
+                <a href="assets/WICO 2026.jpg" target="_blank" title="View Full Certificate" style="display: block; text-decoration: none;">
+                  <div style="position: relative; border-radius: 8px; overflow: hidden; border: 1px solid rgba(184, 134, 11, 0.3); background: #000; box-shadow: 0 8px 20px rgba(0,0,0,0.3); transition: transform 0.3s ease;">
+                    <img src="assets/WICO 2026.jpg" alt="2026 WICO Gold Award Certificate" style="width: 100%; height: 260px; object-fit: cover; object-position: top; display: block;" />
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 8px; text-align: center; color: #d4af37; font-size: 0.75rem; font-family: monospace;">
+                      🔍 Click to expand
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
