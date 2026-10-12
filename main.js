@@ -118,32 +118,50 @@ document.addEventListener("DOMContentLoaded", () => {
         animate();
     }
 
-    // 6. SWIPER
-    // 1. Khởi chạy Swiper
-    const activitySwiper = new Swiper('.activity-slider', {
-        loop: true,
-        speed: 600,
-        autoplay: { delay: 3500, disableOnInteraction: true },
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    });
+    // ══════════════ 6. XỬ LÝ PHÓNG TO ẢNH (LIGHTBOX) ══════════════
+    if (document.querySelector('.activity-slider')) {
+        const activitySwiper = new Swiper('.activity-slider', {
+            loop: true,
+            speed: 600,
+            autoplay: { delay: 3500, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        });
+    }
 
-    // 2. Xử lý phóng to ảnh bằng Dialog Native
+
+    // ══════════════ 7. LIGHTBOX MODAL (Phóng to ảnh khi click) ══════════════
     const dialog = document.getElementById('lightbox-dialog');
     const dialogImg = document.getElementById('dialog-img');
 
-    // Lắng nghe sự kiện click vào các ảnh có class .zoom-img
     document.querySelectorAll('.zoom-img').forEach(img => {
-        img.addEventListener('click', () => {
-            dialogImg.src = img.src; // Gán nội dung ảnh sang dialog
-            dialog.showModal();      // Mở dialog dạng modal phủ lên toàn bộ trang
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (dialog && dialogImg) {
+                dialogImg.src = img.src;
+                if (typeof dialog.showModal === 'function') {
+                    dialog.showModal();
+                } else {
+                    dialog.setAttribute('open', true);
+                }
+            }
         });
     });
 
-    // Click ra ngoài ảnh hoặc click nút X thì đóng dialog
-    dialog.addEventListener('click', (e) => {
-        if (e.target === dialog || e.target.classList.contains('close-dialog-btn')) {
-            dialog.close();
-        }
-    });
+    if (dialog) {
+        dialog.addEventListener('click', (e) => {
+            const rect = dialogImg.getBoundingClientRect();
+            const clickedOutsideImage = (
+                e.clientX < rect.left ||
+                e.clientX > rect.right ||
+                e.clientY < rect.top ||
+                e.clientY > rect.bottom
+            );
+
+            if (clickedOutsideImage || e.target.classList.contains('close-dialog-btn')) {
+                dialog.close();
+            }
+        });
+    }
 });
